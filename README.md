@@ -8,6 +8,12 @@
 | 2      | Nuzul Abatony                | 5025201107 |
 | 3      | Muhammad Raihan Athallah     | 5025201206 |
 
+### Kendala
+<ol>
+    <li> no 8-10 saya kira salted itu bukan file tapi semacam key
+    <li> 
+</ol>
+
 
 # Pembahasan
 **Nomor 1**:<br> Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!<br>
@@ -85,7 +91,7 @@ Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna be
 **Jawab**:<br> 
 <ol>
     <li> berdasarkan <i>"Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi"</i>
-    <li>  filter packet TCP yang mengugnakan mekanisme ACK dengan <code>tcp.flag.ack == 1</code>
+    <li> filter packet TCP yang mengugnakan mekanisme ACK dengan <code>tcp.flag.ack == 1</code><br>
     <li> dari paket-paket yang ditemuan, kita bisa memfollow percakapan paket tersebut dengan <code>follow tcp stream (ctrl+alt+shift+t)</code> kemudian memfilter stream tersebut
     <li> ulangi langkah 3 sampai dapat semua percakapan yang relevan
 </ol>
@@ -109,4 +115,5 @@ Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di a
 **Jawab**:<br> 
 <ol>
     <li> buka file flag.txt
+    <li> didapatkan flag <code>JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}</code>
 </ol>
