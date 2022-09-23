@@ -8,6 +8,12 @@
 | 2      | Nuzul Abatony                | 5025201107 |
 | 3      | Muhammad Raihan Athallah     | 5025201206 |
 
+### Kendala
+<ol>
+    <li> no 8-10 saya kira salted itu bukan file tapi semacam key
+    <li> 
+</ol>
+
 
 # Pembahasan
 **Nomor 1**:<br> Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!<br>
@@ -60,7 +66,7 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id !
 
 **Jawab**:<br> 
 <ol>
-    <li>
+    <li> 
     <li>
 </ol>
 
@@ -84,8 +90,10 @@ Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna be
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> berdasarkan <i>"Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi"</i>
+    <li> filter packet TCP yang mengugnakan mekanisme ACK dengan <code>tcp.flag.ack == 1</code><br>
+    <li> dari paket-paket yang ditemuan, kita bisa memfollow percakapan paket tersebut dengan <code>follow tcp stream (ctrl+alt+shift+t)</code> kemudian memfilter stream tersebut
+    <li> ulangi langkah 3 sampai dapat semua percakapan yang relevan
 </ol>
 
 **Nomor 9**:<br> 
@@ -93,8 +101,12 @@ Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dala
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> berdasarkan percakapan yang didapatkan di nomor 8, diketahui bahwa file salt dikirim di <code>port 9002</code> dan perlu didecrypt dengan passowrd <i>"nakano"</i>.
+    <li> filter packet TCP yang dikirim di port 9002 dengan <code>tcp.port == 9002</code>
+    <li> follow tcp stream hingga ditemukan file salted
+    <li> setelah file salt ditemukan, copy hexdump ke dalam sebuah file (ex: input.txt)
+    <li> convert hexdump ke binary dalam bentuk file .des3 dengan <code>xxd xxd -r -p input.txt d07.des3</code>
+    <li> decrypt d07.des3 ke .txt dengan openssl, dengan kode <code>openssl des3 -d -salt -in d07.des3 -out flag.txt -k nakano</code>
 </ol>
 
 **Nomor 10**:<br> 
@@ -102,6 +114,6 @@ Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di a
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> buka file flag.txt
+    <li> didapatkan flag <code>JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}</code>
 </ol>
