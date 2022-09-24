@@ -30,8 +30,7 @@ Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke web
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li>Buka file pcapng yang diberikan lalu apply filter http pada column protocol kemudian cari packet yang memuat JUDUL TA bukan, sehingga dalam kasus ini ditemukan judul berupa Perancangan Sistem Pengendali Panas Otomatis pada Mesin Sangrai Kopi dengan Logika Fuzzy
 </ol>
 
 **Nomor 3**:<br>
