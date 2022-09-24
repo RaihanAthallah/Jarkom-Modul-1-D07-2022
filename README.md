@@ -39,45 +39,51 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> Menggunakan display filter tcp.dstport == 80 maka akan mengfilter paket-paket yang hanya menuju ke port 80
 </ol>
+
+![soal3](img/3.jpg)
 
 **Nomor 4**:<br>
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21! 
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> Menggunakan display filter tcp.srcport == 21 maka akan mengfilter paket-paket yang hanya berasal dari port 21
 </ol>
+
+![soal4](img/4.jpg)
 
 **Nomor 5**:<br> 
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> Menggunakan display filter tcp.srcport == 443 maka akan mengfilter paket-paket yang hanya berasal dari port 443
 </ol>
+
+![tcpsrcport443](img/5.jpg)
 
 **Nomor 6**:<br> 
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id !
 
 **Jawab**:<br> 
 <ol>
-    <li> 
-    <li>
+    <li> Menggunakan capture filter dst host lipi.go.id untuk mendapatkan paket-paket yang menuju lipi.go.id
 </ol>
+
+![lipi](img/6.jpg)
 
 **Nomor 7**:<br> 
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
 **Jawab**:<br> 
 <ol>
-    <li>
-    <li>
+    <li> Menggunakan capture filter src host 192.68.1.68 untuk mengcapture paket yang berasal dari ip saya
 </ol>
+
+![ip](img/7.jpg)
+![ip](img/7_2.jpg)
 
  ⚠️ **Untuk soal 8-10, silahkan baca cerita di bawah ini!**  ⚠️
 
