@@ -106,6 +106,9 @@ Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna be
     <li> ulangi langkah 3 sampai dapat semua percakapan yang relevan
 </ol>
 
+![ip](img/8_1.jpg)
+![ip](img/8_2.jpg)
+
 **Nomor 9**:<br> 
 Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
 
@@ -118,6 +121,8 @@ Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dala
     <li> convert hexdump ke binary dalam bentuk file .des3 dengan <code>xxd xxd -r -p input.txt d07.des3</code>
     <li> decrypt d07.des3 ke .txt dengan openssl, dengan kode <code>openssl des3 -d -salt -in d07.des3 -out flag.txt -k nakano</code>
 </ol>
+
+![ip](img/9.jpg)
 
 **Nomor 10**:<br> 
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
