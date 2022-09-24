@@ -21,9 +21,8 @@
 **Jawab**:<br>
 <ol>
     <li>Gunakan filter pada packet capture berupa “tcp contains monta” lalu pilih salah satu packet tcp untuk dilakukan follow tcp stream, kemudian akan ditampilkan webserver yang digunakan. Dalam kasus ini, webserver yang digunakan adalah nginx/1.10.3
-        (img/1.jpg)
 </ol>
-
+(img/1.jpg)
 
 **Nomor 2**:<br> 
 Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan **detail topik** pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq?
@@ -32,6 +31,10 @@ Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke web
 <ol>
     <li>Buka file pcapng yang diberikan lalu apply filter http pada column protocol kemudian cari packet yang memuat JUDUL TA bukan, sehingga dalam kasus ini ditemukan judul berupa Perancangan Sistem Pengendali Panas Otomatis pada Mesin Sangrai Kopi dengan Logika Fuzzy
 </ol>
+(img/2_1.jpg)
+(img/2_2.jpg)
+(img/2_3.jpg)
+(img/2_4.jpg)
 
 **Nomor 3**:<br>
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
