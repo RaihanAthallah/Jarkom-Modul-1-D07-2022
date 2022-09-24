@@ -20,8 +20,8 @@
 
 **Jawab**:<br>
 <ol>
-    <li>
-    <li>
+    <li>Gunakan filter pada packet capture berupa “tcp contains monta” lalu pilih salah satu packet tcp untuk dilakukan follow tcp stream, kemudian akan ditampilkan webserver yang digunakan. Dalam kasus ini, webserver yang digunakan adalah nginx/1.10.3
+        (img/1.jpg)
 </ol>
 
 
